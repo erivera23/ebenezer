@@ -47,3 +47,9 @@ h1, h2, h3, h4, h5, h6, button
 	background-color: #48a19d;
 	color: white;
 }
+
+.contenedor
+{
+	width: 80%;
+	margin: auto;
+}
