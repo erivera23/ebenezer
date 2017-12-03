@@ -53,3 +53,45 @@ h1, h2, h3, h4, h5, h6, button
 	width: 80%;
 	margin: auto;
 }
+
+#horarios-container
+{
+	padding: 1em 0;
+}
+
+#horarios-container,
+#horarios-container .tabs-panel,
+#horarios-container .tabs,
+#horarios-container .tabs .tabs-title,
+#horarios-container .tabs .tabs-title.is-active a
+{
+	background-color: #9676af;
+	color: white;
+	border: 0;
+	text-transform: uppercase;
+	font-family: 'Bree Serif', serif;
+	outline: none;
+}
+
+.tabs-content
+{
+	border: 0;
+}
+
+#horarios-container .tabs .tabs-title a
+{
+	font-size: 18px;
+	color: #a7fffb;
+}
+
+#horarios-container .tabs .tabs-title a:hover
+{
+	color: white;
+	background-color: #9676af;
+}
+
+.tabs-title
+{
+	display: inline-block;
+	float: none;
+}
