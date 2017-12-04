@@ -50,26 +50,26 @@
     <section id="menu-container">
       <ul class="menu dropdown align-spaced" data-dropdown-menu>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li>
           <a href="#">Horarios</a>
           <ul id="submenu-container" class="menu">
-            <li><a href="#">Martes</a></li>
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sábado</a></li>
-            <li><a href="#">Domingo</a></li>
+            <li><a href="#horarios-container">Martes</a></li>
+            <li><a href="#horarios-container">Viernes</a></li>
+            <li><a href="#horarios-container">Sábado</a></li>
+            <li><a href="#horarios-container">Domingo</a></li>
           </ul>
         </li>
         <li>
             <a href="#">Eventos</a>
             <ul id="submenu-container" class="menu">
-              <li><a href="#">Santa cena</a></li>
-              <li><a href="#">Presentación de niños</a></li>
-              <li><a href="#">Ayuno congregacional</a></li>
-              <li><a href="#">Silos de José</a></li>
+              <li><a href="#horarios-container">Santa cena</a></li>
+              <li><a href="#horarios-container">Presentación de niños</a></li>
+              <li><a href="#horarios-container">Ayuno congregacional</a></li>
+              <li><a href="#horarios-container">Silos de José</a></li>
             </ul>
         </li>
-        <li><a href="#">¿Cómo llegar?</a></li>
+        <li><a href="#direccion">¿Cómo llegar?</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </section>
@@ -111,6 +111,55 @@
         </nav>
       </div>
     <!-- /PORTADA -->
+
+    <!-- Nosotros -->
+    <section id="nosotros">
+        <ul class="tabs text-center" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Historia</a></li>
+            <li class="tabs-title"><a href="#panel2">Misión</a></li>
+            <li class="tabs-title"><a href="#panel3">Visión</a></li>
+          </ul>
+          
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="row">
+                <div class="small-12 medium-6 large-12 column">
+                  <h4 class="text-center"> Historia </h4>
+                  <p>Historia de la Iglesia de Cristo Ebenezer La Ceiba.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <div class="row">
+                <div class="small-12 medium-12 large-12 column">
+                  <div class="card">
+                    <div class="card-divider text-center">
+                      <h4 class="">Misión</h4>
+                    </div>
+                    <div class="card-section">
+                      <p>Ser un ministerio prosperado por la palabra, con revelación y cimientos apostólicos, bajo la unción del Espíritu Santo, para entregar el mensaje de salvación y edificar el cuerpo de Cristo por familias, logrando una bendición total en el espíritu, alma y cuerpo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel3">
+              <div class="row">
+                <div class="small-12 medium-6 large-12 column">
+                  <div class="card">
+                    <div class="card-divider text-center">
+                      <h4>Visión</h4>
+                    </div>
+                    <div class="card-section">
+                      <p>Anhelamos un ministerio con familias entendidas y hacedoras de la palabra, en constante crecimiento espiritual y numérico, cuyo legado de paz, santidad y prosperidad produzca un mejor estilo de vida para nuestros hijos y futuras generaciones, que trascienda nuestras fronteras</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- ///Nosotros -->
 
     <!-- Horarios y eventos -->
       <section id="horarios-container">
@@ -298,9 +347,16 @@
       </section>
     <!-- /// Horarios y eventos-->
 
-    <!-- Nosotros -->
-
-    <!-- ///Nosotros -->
+    <!-- DIRECCION -->
+    <section id="direccion">
+      <div class="row text-center">
+        <div class="small-12 medium-10 large-12 column">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7679.105975699207!2d-86.78219392431765!3d15.774769398117817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69a9cd7298cd73%3A0xa0b2b83669e4091c!2sIGLESIA+DE+CRISTO+EBENEZER+LA+CEIBA!5e0!3m2!1ses!2shn!4v1509491656252" width="800" height="600" frameborder="0" style="border:0" allowfullscreen="">
+            </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- ///DIRECCION -->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

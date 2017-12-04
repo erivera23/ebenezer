@@ -63,7 +63,11 @@ h1, h2, h3, h4, h5, h6, button
 #horarios-container .tabs-panel,
 #horarios-container .tabs,
 #horarios-container .tabs .tabs-title,
-#horarios-container .tabs .tabs-title.is-active a
+#horarios-container .tabs .tabs-title.is-active a,
+#nosotros,
+#nosotros .tabs,
+#nosotros .tabs .tabs-title,
+#nosotros .tabs .tabs-title.is-active a
 {
 	background-color: #9676af;
 	color: white;
@@ -78,13 +82,15 @@ h1, h2, h3, h4, h5, h6, button
 	border: 0;
 }
 
-#horarios-container .tabs .tabs-title a
+#horarios-container .tabs .tabs-title a,
+#nosotros .tabs .tabs-title a
 {
 	font-size: 18px;
 	color: #a7fffb;
 }
 
-#horarios-container .tabs .tabs-title a:hover
+#horarios-container .tabs .tabs-title a:hover,
+#nosotros .tabs .tabs-title a:hover
 {
 	color: white;
 	background-color: #9676af;
@@ -99,4 +105,14 @@ h1, h2, h3, h4, h5, h6, button
 .orbit-container
 {
 	height: auto;
+}
+
+.card-section
+{
+	text-align: justify;
+}
+
+.card-divider
+{
+	display: unset;
 }
