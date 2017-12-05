@@ -1,6 +1,6 @@
 body
 {
-	background-color: #ee3f54;
+	background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6, button
@@ -15,14 +15,14 @@ h1, h2, h3, h4, h5, h6, button
 
 #logo-container .callout
 {
-	background-color: #ee3f54;
-	color: white;
+	background-color: #ffffff;
+	color: black;
 	margin-bottom: 0;
 }
 
 #menu-container
 {
-	background-color: #48a19d;
+	background-color: #1c3643;
 
 }
 
@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6, button
 {
 	width: 80%;
 	margin: auto;
+	height: 100%;
 }
 
 #horarios-container
@@ -69,7 +70,7 @@ h1, h2, h3, h4, h5, h6, button
 #nosotros .tabs .tabs-title,
 #nosotros .tabs .tabs-title.is-active a
 {
-	background-color: #9676af;
+	background-color: #1c3643;
 	color: white;
 	border: 0;
 	text-transform: uppercase;
@@ -93,7 +94,7 @@ h1, h2, h3, h4, h5, h6, button
 #nosotros .tabs .tabs-title a:hover
 {
 	color: white;
-	background-color: #9676af;
+	background-color: #2c6683;
 }
 
 .tabs-title
@@ -188,6 +189,7 @@ h1, h2, h3, h4, h5, h6, button
 	border-radius: 5000px;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	background-color: green;
   }
   
   .contact-us-form-actions .contact-us-file-button {
