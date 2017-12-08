@@ -47,30 +47,34 @@
 
     <!-- MENU -->
 
-    <section id="menu-container">
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li>
-          <a href="#">Horarios</a>
-          <ul id="submenu-container" class="menu">
-            <li><a href="#horarios-container">Martes</a></li>
-            <li><a href="#horarios-container">Viernes</a></li>
-            <li><a href="#horarios-container">Sábado</a></li>
-            <li><a href="#horarios-container">Domingo</a></li>
-          </ul>
-        </li>
-        <li>
-            <a href="#">Eventos</a>
-            <ul id="submenu-container" class="menu">
-              <li><a href="#horarios-container">Santa cena</a></li>
-              <li><a href="#horarios-container">Presentación de niños</a></li>
-              <li><a href="#horarios-container">Ayuno congregacional</a></li>
-              <li><a href="#horarios-container">Silos de José</a></li>
+    <section id="scrollSticky" data-sticky-container>
+      <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+          <nav data-magellan id="menu-container">
+            <ul class="menu dropdown align-spaced" data-dropdown-menu>
+              <li><a href="#social-container">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li>
+                <a href="#">Horarios</a>
+                <ul id="submenu-container" class="menu">
+                  <li><a href="#horarios-container">Martes</a></li>
+                  <li><a href="#horarios-container">Viernes</a></li>
+                  <li><a href="#horarios-container">Sábado</a></li>
+                  <li><a href="#horarios-container">Domingo</a></li>
+                </ul>
+              </li>
+              <li>
+                  <a href="#">Eventos</a>
+                  <ul id="submenu-container" class="menu">
+                    <li><a href="#horarios-container">Santa cena</a></li>
+                    <li><a href="#horarios-container">Presentación de niños</a></li>
+                    <li><a href="#horarios-container">Ayuno congregacional</a></li>
+                    <li><a href="#horarios-container">Silos de José</a></li>
+                  </ul>
+              </li>
+              <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+          </nav>
+      </div>
     </section>
 
     <!-- /MENU -->
@@ -112,7 +116,7 @@
     <!-- /PORTADA -->
 
     <!-- Nosotros -->
-    <section id="nosotros">
+    <section id="nosotros" data-magellan-target="nosotros" class="small-12 medium-12 large-12 column">
         <ul class="tabs text-center" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Historia</a></li>
             <li class="tabs-title"><a href="#panel2">Misión</a></li>
@@ -161,7 +165,7 @@
     <!-- ///Nosotros -->
 
     <!-- Horarios y eventos -->
-      <section id="horarios-container">
+      <section id="horarios-container" data-magellan-target="horarios-container">
         <h3 class="text-center">Horarios y eventos</h3>
         <ul class="tabs text-center" data-tabs id="horarios-tabs">
           <li class="tabs-title is-active">
@@ -346,8 +350,29 @@
       </section>
     <!-- /// Horarios y eventos-->
 
+    <!-- SUSCRIPCION -->
+    <section id="suscribete-container">
+      <h3 class="text-center">Suscríbete</h3>
+      <h4 class="text-center"><small>Y recibe nuestras últimas novedades.</small></h4>
+      <form action="" method="" novalidate data-abide>
+        <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
+          <p><i class="fi-alert"></i> Ingresó un correo electrónico no válido</p>
+        </div>
+        <div class="row columns small-12 medium-6">
+          <div class="input-group">
+            <span class="input-group-label"> <i class="fi-mail"></i></span>
+            <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required />
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Suscribirse">
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- /SUSCRIPCION -->
+
     <!-- CONTACTO -->
-    <section id="contacto" class="contact-us-section">
+    <section id="contacto" class="contact-us-section" data-magellan-target="contacto">
         <div class="row medium-unstack">
           <div class="columns contact-us-section-left">
             <h2 class="contact-us-header">Dirección</h2>

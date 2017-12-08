@@ -118,6 +118,39 @@ h1, h2, h3, h4, h5, h6, button
 	display: unset;
 }
 
+#suscribete-container
+{
+	background-color: #ee3f54;
+	color: white;
+	padding: 1em 0;
+}
+
+#suscribete-container h4 small
+{
+	color: #ffcddc;
+}
+
+#suscribete-container .button
+{
+	font-family: 'Bree Serif', serif;
+	background-color: #1c3643;
+}
+
+#suscribete-container .error-container
+{
+	font-family: 'Bree Serif', serif;
+}
+
+.is-invalid-input:not(:focus)
+{
+	/* CAMBIAR BACKGROUND COLOR DE INPUT */
+}
+
+.data-sticky
+{
+	z-index: 100;
+}
+
 /* FORMULARIO CONTACTO */
 
 
