@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, button
 #menu-container li a {
 	color: white;
 	font-family: 'Bree Serif', serif;
+	text-transform: uppercase;
 }
 
 #menu-container li a:hover,
@@ -149,6 +150,24 @@ h1, h2, h3, h4, h5, h6, button
 .data-sticky
 {
 	z-index: 100;
+}
+
+#offCanvas,
+#offCanvas li a
+{
+	background-color: black;
+	color: white;
+	font-family: 'Bree Serif', serif;
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after
+{
+	border-color: transparent transparent transparent white;
+}
+
+#offCanvas .js-drilldown-back > a::before
+{
+	border-color: transparent white transparent transparent;
 }
 
 /* FORMULARIO CONTACTO */

@@ -13,401 +13,441 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- Social -->
-
-    <section id="social-container">
-      <div class="align-center row">
-        <div class="small-1 column">
-          <a href="https://www.facebook.com/Iglesiaebenezerlaceiba/" target="_blank">
-          <i class="fi-social-facebook"></i>
-          </a>
-        </div>
-        <div class="small-1 column">
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="fi-social-twitter"></i>
-          </a>
-        </div>
-        <div class="small-1 column">
-          <a href="https://www.instagram.com/ebenezerlaceiba/" target="_blank">
-            <i class="fi-social-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social -->
-
-    <!-- LOGO -->
-    <section id="logo-container">
-      <div class="callout text-center">
-        <h1>Iglesia de Cristo Ebenezer La Ceiba</h1>
-      </div>
-    </section>
-    <!-- LOGO -->
-
-    <!-- MENU -->
-
-    <section id="scrollSticky" data-sticky-container>
-      <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
-          <nav data-magellan id="menu-container">
-            <ul class="menu dropdown align-spaced" data-dropdown-menu>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="vertical menu" data-drilldown>
               <li><a href="#social-container">Inicio</a></li>
               <li><a href="#nosotros">Nosotros</a></li>
               <li>
-                <a href="#">Horarios</a>
-                <ul id="submenu-container" class="menu">
-                  <li><a href="#horarios-container">Martes</a></li>
-                  <li><a href="#horarios-container">Viernes</a></li>
-                  <li><a href="#horarios-container">Sábado</a></li>
-                  <li><a href="#horarios-container">Domingo</a></li>
+                <a href="#horarios-container">Horarios</a>
+                <ul id="" class="vertical menu">
+                  <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Martes</a></li>
+                  <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Viernes</a></li>
+                  <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Sábado</a></li>
+                  <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Domingo</a></li>
                 </ul>
               </li>
               <li>
-                  <a href="#">Eventos</a>
-                  <ul id="submenu-container" class="menu">
-                    <li><a href="#horarios-container">Santa cena</a></li>
-                    <li><a href="#horarios-container">Presentación de niños</a></li>
-                    <li><a href="#horarios-container">Ayuno congregacional</a></li>
-                    <li><a href="#horarios-container">Silos de José</a></li>
+                  <a href="#horarios-container">Eventos</a>
+                  <ul id="" class="vertical menu">
+                    <li><a data-toggle-dia="panelSantaCena" href="#horarios-container">Santa cena</a></li>
+                    <li><a data-toggle-dia="panelPresentacion" href="#horarios-container">Presentación de niños</a></li>
+                    <li><a data-toggle-dia="panelAyuno" href="#horarios-container">Ayuno congregacional</a></li>
+                    <li><a data-toggle-dia="panelSilos" href="#horarios-container">Silos de José</a></li>
                   </ul>
               </li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
           </nav>
-      </div>
-    </section>
-
-    <!-- /MENU -->
-
-    <!-- PORTADA -->
-    <div class="orbit contenedor" role="region" aria-label="Favorite Space Pictures" data-orbit>
-        <div class="orbit-wrapper">
-          <div class="orbit-controls">
-            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-          </div>
-          <ul class="orbit-container">
-            <li class="is-active orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="images/background.jpg" alt="Space">
-                <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-              </figure>
-            </li>
-            <li class="orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="images/vienepronto.jpg" alt="Space">
-                <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-              </figure>
-            </li>
-            <li class="orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="images/mesa.jpg" alt="Space">
-                <figcaption class="orbit-caption">Encapsulating</figcaption>
-              </figure>
-            </li>
-          </ul>
         </div>
-        <nav class="orbit-bullets">
-          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-        </nav>
-      </div>
-    <!-- /PORTADA -->
 
-    <!-- Nosotros -->
-    <section id="nosotros" data-magellan-target="nosotros" class="small-12 medium-12 large-12 column">
-        <ul class="tabs text-center" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Historia</a></li>
-            <li class="tabs-title"><a href="#panel2">Misión</a></li>
-            <li class="tabs-title"><a href="#panel3">Visión</a></li>
-          </ul>
-          
-          <div class="tabs-content" data-tabs-content="example-tabs">
-            <div class="tabs-panel is-active" id="panel1">
-              <div class="row">
-                <div class="small-12 medium-6 large-12 column">
-                  <h4 class="text-center"> Historia </h4>
-                  <p>Historia de la Iglesia de Cristo Ebenezer La Ceiba.</p>
-                </div>
-              </div>
-            </div>
-            <div class="tabs-panel" id="panel2">
-              <div class="row">
-                <div class="small-12 medium-12 large-12 column">
-                  <div class="card">
-                    <div class="card-divider text-center">
-                      <h4 class="">Misión</h4>
-                    </div>
-                    <div class="card-section">
-                      <p>Ser un ministerio prosperado por la palabra, con revelación y cimientos apostólicos, bajo la unción del Espíritu Santo, para entregar el mensaje de salvación y edificar el cuerpo de Cristo por familias, logrando una bendición total en el espíritu, alma y cuerpo.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tabs-panel" id="panel3">
-              <div class="row">
-                <div class="small-12 medium-6 large-12 column">
-                  <div class="card">
-                    <div class="card-divider text-center">
-                      <h4>Visión</h4>
-                    </div>
-                    <div class="card-section">
-                      <p>Anhelamos un ministerio con familias entendidas y hacedoras de la palabra, en constante crecimiento espiritual y numérico, cuyo legado de paz, santidad y prosperidad produzca un mejor estilo de vida para nuestros hijos y futuras generaciones, que trascienda nuestras fronteras</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    <!-- ///Nosotros -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- Social -->
 
-    <!-- Horarios y eventos -->
-      <section id="horarios-container" data-magellan-target="horarios-container">
-        <h3 class="text-center">Horarios y eventos</h3>
-        <ul class="tabs text-center" data-tabs id="horarios-tabs">
-          <li class="tabs-title is-active">
-            <a href="#panelHorarios">Horarios</a>
-          </li>
-          <li class="tabs-title">
-            <a href="#panelSantaCena">Santa cena</a>
-          </li>
-          <li class="tabs-title">
-            <a href="#panelPresentacion">Presentación de niños</a>
-          </li>
-          <li class="tabs-title">
-            <a href="#panelAyuno">Ayuno</a>
-          </li>
-          <li class="tabs-title">
-            <a href="#panelSilos">Silos de José</a>
-          </li>
-        </ul>
-
-        <div class="tabs-content" data-tabs-content="horarios-tabs">
-          <div class="tabs-panel is-active" id="panelHorarios">
-            <div class="row">
-              <div class="small-12 medium-6 large-3 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Culto de enseñanza
-                  </div>
-                  <div class="card-section">
-                    <h5>Día martes</h5>
-                    <p>Hora 6:45 p.m.</p>
-                  </div>
+          <section id="social-container">
+              <div class="align-center row">
+                <div class="small-1 column">
+                  <a href="https://www.facebook.com/Iglesiaebenezerlaceiba/" target="_blank">
+                  <i class="fi-social-facebook"></i>
+                  </a>
+                </div>
+                <div class="small-1 column">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <i class="fi-social-twitter"></i>
+                  </a>
+                </div>
+                <div class="small-1 column">
+                  <a href="https://www.instagram.com/ebenezerlaceiba/" target="_blank">
+                    <i class="fi-social-instagram"></i>
+                  </a>
                 </div>
               </div>
-
-              <div class="small-12 medium-6 large-3 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Culto de familia
-                  </div>
-                  <div class="card-section">
-                    <h5>Día viernes</h5>
-                    <p>Hora 6:45 p.m.</p>
-                  </div>
-                </div>
+            </section>
+        
+            <!-- Social -->
+        
+            <!-- LOGO -->
+            <section id="logo-container">
+              <div class="callout text-center">
+                <h1>Iglesia de Cristo Ebenezer La Ceiba</h1>
               </div>
-
-              <div class="small-12 medium-6 large-3 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Culto de intercesión
-                  </div>
-                  <div class="card-section">
-                    <h5>Día sábado</h5>
-                    <p>Hora 6:00 a.m.</p>
-                  </div>
-                </div>
+            </section>
+            <!-- LOGO -->
+        
+            <!-- MENU -->
+        
+            <section id="scrollSticky" data-sticky-container>
+              <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+                  <nav data-magellan id="menu-container">
+                    <ul class="menu align-spaced show-for-small-only">
+                      <li>
+                        <a href="#" data-toggle="offCanvas"> Menú</a>
+                      </li>
+                    </ul>
+                    <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                      <li><a href="#social-container">Inicio</a></li>
+                      <li><a href="#nosotros">Nosotros</a></li>
+                      <li>
+                        <a href="#horarios-container">Horarios</a>
+                        <ul id="submenu-container" class="menu">
+                          <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Martes</a></li>
+                          <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Viernes</a></li>
+                          <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Sábado</a></li>
+                          <li><a data-toggle-dia="panelHorarios" href="#horarios-container">Domingo</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                          <a href="#horarios-container">Eventos</a>
+                          <ul id="submenu-container" class="menu">
+                            <li><a data-toggle-dia="panelSantaCena" href="#horarios-container">Santa cena</a></li>
+                            <li><a data-toggle-dia="panelPresentacion" href="#horarios-container">Presentación de niños</a></li>
+                            <li><a data-toggle-dia="panelAyuno" href="#horarios-container">Ayuno congregacional</a></li>
+                            <li><a data-toggle-dia="panelSilos" href="#horarios-container">Silos de José</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                  </nav>
               </div>
-
-              <div class="small-12 medium-6 large-3 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Culto general
+            </section>
+        
+            <!-- /MENU -->
+        
+            <!-- PORTADA -->
+            <div class="orbit contenedor" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                  <div class="orbit-controls">
+                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                   </div>
-                  <div class="card-section">
-                    <h5>Día domingo</h5>
-                    <p>Hora 6:00 p.m.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="tabs-panel" id="panelSantaCena">
-            <div class="row">
-              <div class="small-12 medium-6 large-6 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Santa cena
-                  </div>
-                  <div class="card-section">
-                    <h5>Primer domingo de cada mes</h5>
-                    <p>Hora 6:00 p.m.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="small-12 medium-6 large-6 column">
-                <div class="orbit-container">
-                  <div class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img class="orbit-image" src="images/mesa.jpg" alt="La mesa de santa cena">
-                      <figcaption class="orbit-caption">La mesa de santa cena</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="tabs-panel" id="panelPresentacion">
-            <div class="row">
-              <div class="small-12 medium-6 large-6 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Presentación de niños
-                  </div>
-                  <div class="card-section">
-                    <h5>Segundo domingo de cada mes</h5>
-                    <p>Hora 6:00 p.m.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="small-12 medium-6 large-6 column">
-                <div class="orbit-container">
-                  <div class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img src="" alt="" class="orbit-image">
-                      <figcaption class="orbit-caption">Presención de niños</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tabs-panel" id="panelAyuno">
-              <div class="row">
-                <div class="small-12 medium-6 large-6 column">
-                  <div class="card">
-                    <div class="card-divider">
-                      Ayuno congregacional
-                    </div>
-                    <div class="card-section">
-                      <h5>Tercer domingo de cada mes</h5>
-                      <p>Hora 9:00 a.m. en adelante</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="small-12 medium-6 large-6 column">
-                  <div class="orbit-container">
-                    <div class="orbit-slide">
+                  <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
                       <figure class="orbit-figure">
-                        <img src="" alt="" class="orbit-image">
-                        <figcaption class="orbit-caption">Ayuno congregacional</figcaption>
+                        <img class="orbit-image" src="images/background.jpg" alt="Space">
+                        <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
                       </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/vienepronto.jpg" alt="Space">
+                        <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/mesa.jpg" alt="Space">
+                        <figcaption class="orbit-caption">Encapsulating</figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                </nav>
+              </div>
+            <!-- /PORTADA -->
+        
+            <!-- Nosotros -->
+            <section id="nosotros" data-magellan-target="nosotros" class="small-12 medium-12 large-12 column">
+                <ul class="tabs text-center" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Historia</a></li>
+                    <li class="tabs-title"><a href="#panel2">Misión</a></li>
+                    <li class="tabs-title"><a href="#panel3">Visión</a></li>
+                  </ul>
+                  
+                  <div class="tabs-content" data-tabs-content="example-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                      <div class="row">
+                        <div class="small-12 medium-6 large-12 column">
+                          <h4 class="text-center"> Historia </h4>
+                          <p>Historia de la Iglesia de Cristo Ebenezer La Ceiba.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                      <div class="row">
+                        <div class="small-12 medium-12 large-12 column">
+                          <div class="card">
+                            <div class="card-divider text-center">
+                              <h4 class="">Misión</h4>
+                            </div>
+                            <div class="card-section">
+                              <p>Ser un ministerio prosperado por la palabra, con revelación y cimientos apostólicos, bajo la unción del Espíritu Santo, para entregar el mensaje de salvación y edificar el cuerpo de Cristo por familias, logrando una bendición total en el espíritu, alma y cuerpo.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs-panel" id="panel3">
+                      <div class="row">
+                        <div class="small-12 medium-6 large-12 column">
+                          <div class="card">
+                            <div class="card-divider text-center">
+                              <h4>Visión</h4>
+                            </div>
+                            <div class="card-section">
+                              <p>Anhelamos un ministerio con familias entendidas y hacedoras de la palabra, en constante crecimiento espiritual y numérico, cuyo legado de paz, santidad y prosperidad produzca un mejor estilo de vida para nuestros hijos y futuras generaciones, que trascienda nuestras fronteras</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- ///Nosotros -->
+        
+            <!-- Horarios y eventos -->
+              <section id="horarios-container" data-magellan-target="horarios-container">
+                <h3 class="text-center">Horarios y eventos</h3>
+                <ul class="tabs text-center show-for-medium" data-tabs id="horarios-tabs">
+                  <li class="tabs-title is-active">
+                    <a href="#panelHorarios">Horarios</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panelSantaCena">Santa cena</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panelPresentacion">Presentación de niños</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panelAyuno">Ayuno</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panelSilos">Silos de José</a>
+                  </li>
+                </ul>
+        
+                <div class="tabs-content" data-tabs-content="horarios-tabs">
+                  <div class="tabs-panel is-active" id="panelHorarios">
+                    <div class="row">
+                      <div class="small-12 medium-6 large-3 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Culto de enseñanza
+                          </div>
+                          <div class="card-section">
+                            <h5>Día martes</h5>
+                            <p>Hora 6:45 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="small-12 medium-6 large-3 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Culto de familia
+                          </div>
+                          <div class="card-section">
+                            <h5>Día viernes</h5>
+                            <p>Hora 6:45 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="small-12 medium-6 large-3 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Culto de intercesión
+                          </div>
+                          <div class="card-section">
+                            <h5>Día sábado</h5>
+                            <p>Hora 6:00 a.m.</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="small-12 medium-6 large-3 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Culto general
+                          </div>
+                          <div class="card-section">
+                            <h5>Día domingo</h5>
+                            <p>Hora 6:00 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                  <div class="tabs-panel" id="panelSantaCena">
+                    <div class="row">
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Santa cena
+                          </div>
+                          <div class="card-section">
+                            <h5>Primer domingo de cada mes</h5>
+                            <p>Hora 6:00 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="orbit-container">
+                          <div class="orbit-slide">
+                            <figure class="orbit-figure">
+                              <img class="orbit-image" src="images/mesa.jpg" alt="La mesa de santa cena">
+                              <figcaption class="orbit-caption">La mesa de santa cena</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+        
+                  <div class="tabs-panel" id="panelPresentacion">
+                    <div class="row">
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Presentación de niños
+                          </div>
+                          <div class="card-section">
+                            <h5>Segundo domingo de cada mes</h5>
+                            <p>Hora 6:00 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="orbit-container">
+                          <div class="orbit-slide">
+                            <figure class="orbit-figure">
+                              <img src="" alt="" class="orbit-image">
+                              <figcaption class="orbit-caption">Presención de niños</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="tabs-panel" id="panelAyuno">
+                      <div class="row">
+                        <div class="small-12 medium-6 large-6 column">
+                          <div class="card">
+                            <div class="card-divider">
+                              Ayuno congregacional
+                            </div>
+                            <div class="card-section">
+                              <h5>Tercer domingo de cada mes</h5>
+                              <p>Hora 9:00 a.m. en adelante</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="small-12 medium-6 large-6 column">
+                          <div class="orbit-container">
+                            <div class="orbit-slide">
+                              <figure class="orbit-figure">
+                                <img src="" alt="" class="orbit-image">
+                                <figcaption class="orbit-caption">Ayuno congregacional</figcaption>
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+        
+                  <div class="tabs-panel" id="panelSilos">
+                    <div class="row">
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="card">
+                          <div class="card-divider">
+                            Silos de José
+                          </div>
+                          <div class="card-section">
+                            <h5>Cuarto domingo de cada mes</h5>
+                            <p>Hora 6:00 p.m.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="small-12 medium-6 large-6 column">
+                        <div class="orbit-container">
+                          <div class="orbit-slide">
+                            <figure class="orbit-figure">
+                              <img src="" alt="" class="orbit-image">
+                              <figcaption class="orbit-caption">Silos de José</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-          </div>
-
-          <div class="tabs-panel" id="panelSilos">
-            <div class="row">
-              <div class="small-12 medium-6 large-6 column">
-                <div class="card">
-                  <div class="card-divider">
-                    Silos de José
-                  </div>
-                  <div class="card-section">
-                    <h5>Cuarto domingo de cada mes</h5>
-                    <p>Hora 6:00 p.m.</p>
+              </section>
+            <!-- /// Horarios y eventos-->
+        
+            <!-- SUSCRIPCION -->
+            <!-- <section id="suscribete-container">
+              <h3 class="text-center">Suscríbete</h3>
+              <h4 class="text-center"><small>Y recibe nuestras últimas novedades.</small></h4>
+              <form action="" method="" novalidate data-abide>
+                <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
+                  <p><i class="fi-alert"></i> Ingresó un correo electrónico no válido</p>
+                </div>
+                <div class="row columns small-12 medium-6">
+                  <div class="input-group">
+                    <span class="input-group-label"> <i class="fi-mail"></i></span>
+                    <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required />
+                    <div class="input-group-button">
+                      <input type="submit" class="button" value="Suscribirse">
+                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
+            </section>-->
+
+            <!-- /SUSCRIPCION -->
+        
+            <!-- CONTACTO -->
+            <section id="contacto" class="contact-us-section" data-magellan-target="contacto">
+                <div class="row medium-unstack">
+                  <div class="columns contact-us-section-left">
+                    <h2 class="contact-us-header">Dirección</h2>
+                    <div class="responsive-embed">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7679.105975699207!2d-86.78219392431765!3d15.774769398117817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69a9cd7298cd73%3A0xa0b2b83669e4091c!2sIGLESIA+DE+CRISTO+EBENEZER+LA+CEIBA!5e0!3m2!1ses!2shn!4v1509491656252" frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="">
+                      </iframe>
+                    </div>
               
-              <div class="small-12 medium-6 large-6 column">
-                <div class="orbit-container">
-                  <div class="orbit-slide">
-                    <figure class="orbit-figure">
-                      <img src="" alt="" class="orbit-image">
-                      <figcaption class="orbit-caption">Silos de José</figcaption>
-                    </figure>
+                    <ul class="contact-us-list">
+                      <li><i class="fi-marker"> Entre avenida San Isidro y avenida 14 de Julio, calle 25.</i></li>
+                      <li><i class="fi-mail"><a href="mailto:"> ebenezer@gmail.com</a></i></li>
+                      <li><i class="fi-telephone">
+                        9999-9999
+                      </i> </li>
+                    </ul>
                   </div>
+                <div class="columns contact-us-section-right">
+                  <h2 class="contact-us-header">Envíanos un mensaje</h2>
+                  <form class="contact-us-form">
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Correo electrónico">
+                    <textarea name="message" id="" rows="12" placeholder="Escribe tu mensaje aquí"></textarea>
+                    <div class="contact-us-form-actions">
+                      <input type="submit" class="button" value="Enviar" />
+                      <div>
+                        <label for="FileUpload" class="button contact-us-file-button">Adjuntar archivo</label>
+                        <input type="file" id="FileUpload" class="show-for-sr">
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- /// Horarios y eventos-->
-
-    <!-- SUSCRIPCION -->
-    <section id="suscribete-container">
-      <h3 class="text-center">Suscríbete</h3>
-      <h4 class="text-center"><small>Y recibe nuestras últimas novedades.</small></h4>
-      <form action="" method="" novalidate data-abide>
-        <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
-          <p><i class="fi-alert"></i> Ingresó un correo electrónico no válido</p>
-        </div>
-        <div class="row columns small-12 medium-6">
-          <div class="input-group">
-            <span class="input-group-label"> <i class="fi-mail"></i></span>
-            <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required />
-            <div class="input-group-button">
-              <input type="submit" class="button" value="Suscribirse">
-            </div>
-          </div>
-        </div>
-      </form>
-    </section>
-    <!-- /SUSCRIPCION -->
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contact-us-section" data-magellan-target="contacto">
-        <div class="row medium-unstack">
-          <div class="columns contact-us-section-left">
-            <h2 class="contact-us-header">Dirección</h2>
-            <div class="responsive-embed">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7679.105975699207!2d-86.78219392431765!3d15.774769398117817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69a9cd7298cd73%3A0xa0b2b83669e4091c!2sIGLESIA+DE+CRISTO+EBENEZER+LA+CEIBA!5e0!3m2!1ses!2shn!4v1509491656252" frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="">
-              </iframe>
-            </div>
-      
-            <ul class="contact-us-list">
-              <li><i class="fi-marker"> 100 W Rincon Ave, Campbell CA 95008</i></li>
-              <li><i class="fi-mail"><a href="mailto:"> hello@yeticave.com</a></i></li>
-              <li><i class="fi-telephone">
-                1 (408) 445 9978
-              </i> </li>
-            </ul>
-          </div>
-        <div class="columns contact-us-section-right">
-          <h2 class="contact-us-header">Envíanos un mensaje</h2>
-          <form class="contact-us-form">
-            <input type="text" placeholder="Nombre completo">
-            <input type="email" placeholder="Correo electrónico">
-            <textarea name="message" id="" rows="12" placeholder="Escribe tu mensaje aquí"></textarea>
-            <div class="contact-us-form-actions">
-              <input type="submit" class="button" value="Send it" />
-              <div>
-                <label for="FileUpload" class="button contact-us-file-button">Adjuntar archivo</label>
-                <input type="file" id="FileUpload" class="show-for-sr">
-              </div>
-            </div>
-          </form>
+            </section>
+              
+            <!-- ///CONTACTO -->
         </div>
       </div>
-    </section>
-      
-    <!-- ///CONTACTO -->
+    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
