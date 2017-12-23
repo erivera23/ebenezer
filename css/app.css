@@ -69,7 +69,9 @@ h1, h2, h3, h4, h5, h6, button
 #nosotros,
 #nosotros .tabs,
 #nosotros .tabs .tabs-title,
-#nosotros .tabs .tabs-title.is-active a
+#nosotros .tabs .tabs-title.is-active a,
+#nosotros .accordion,
+#nosotros .accordion .accordion-item
 {
 	background-color: #1c3643;
 	color: white;
