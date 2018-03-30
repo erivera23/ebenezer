@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6, button
 			justify-content: space-between;
   }
   
-  .contact-us-form-actions button {
+  .contact-us-form-actions .button {
 	border-radius: 5000px;
 	padding-left: 2rem;
 	padding-right: 2rem;
