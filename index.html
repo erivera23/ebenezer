@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/config.js"></script>
   </head>
   <body>
     <div class="off-canvas-wrapper">
@@ -426,32 +428,48 @@
                       </i> </li>
                     </ul>
                   </div>
-                <div class="columns contact-us-section-right">
-                  <h2 class="contact-us-header">Envíanos un mensaje</h2>
-                  <form class="contact-us-form" action="http://formspree.io/riveraefrain5@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Nombre completo">
-                    <input type="email" name="email" placeholder="Correo electrónico">
-                    <textarea name="message" rows="12" placeholder="Escribe tu mensaje aquí"></textarea>
-                    <div class="contact-us-form-actions">
-                      <input type="submit" class="button" value="Enviar" />
-                      <div>
-                        <label for="FileUpload" class="button contact-us-file-button">Adjuntar archivo</label>
-                        <input type="file" id="FileUpload" class="show-for-sr">
+                  <div class="columns contact-us-section-right">
+                    <h2 class="contact-us-header">Envíanos un mensaje</h2>
+                    <form class="contact-us-form" method="POST">
+                      <input type="text" name="name" id="name" placeholder="Nombre completo">
+                      <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                      <textarea name="message" rows="12" id="message" placeholder="Escribe tu mensaje aquí"></textarea>
+                      <div class="contact-us-form-actions">
+                        <button class="button" onclick="writeEmail()">Enviar</button>
+                        <!-- <div>
+                          <label for="FileUpload" class="button contact-us-file-button">Adjuntar archivo</label>
+                          <input type="file" id="FileUpload" class="show-for-sr">
+                        </div> -->
                       </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
-              </div>
             </section>
-              
+            
             <!-- ///CONTACTO -->
+
+            <script>
+              // Get a reference to the database service
+              var database = firebase.database();
+              function writeEmail()
+              {
+                name = document.getElementById('name').value 
+                email = document.getElementById('email').value
+                message = document.getElementById('message').value
+                time = new Date().getTime()
+                database.ref('Correos/'+time).set({
+                  nombre: name,
+                  correo: email,
+                  msj: message
+                });
+              }
+            </script>
         </div>
       </div>
     </div>
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
